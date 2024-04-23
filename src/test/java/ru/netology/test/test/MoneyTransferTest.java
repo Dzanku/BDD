@@ -76,6 +76,6 @@ class MoneyTransferTest {
 //        var actualBalanceFirstCard = dashboardPage.getCardBalance(firstCardInfo);
 //        var actualBalanceSecondCard = dashboardPage.getCardBalance(secondCardInfo);
 //        Assertions.assertEquals(firstCardBalance, actualBalanceFirstCard);
-//        Assertions.assertEquals(secondCardBalance, actualBalanceSecondCard);
-//    }
-//}
+      //  Assertions.assertEquals(secondCardBalance, actualBalanceSecondCard);
+    //}
+}
