@@ -69,7 +69,7 @@ class MoneyTransferTest {
         var firstCardInfo = getFirstCardInfo();
         var secondCardInfo = getSecondCardInfo();
         var firstCardBalance = dashboardPage.getCardBalance(firstCardInfo);
-        var secondCardBalance = dashboardPage.getCardBalance(secondCardInfo);
+       var secondCardBalance = dashboardPage.getCardBalance(secondCardInfo);
         var amount = generateInValidAmount(secondCardBalance);
         var transferPage = dashboardPage.selectCardToTransfer(firstCardInfo);
         transferPage.Transfer(String.valueOf(amount), secondCardInfo);
@@ -77,7 +77,7 @@ class MoneyTransferTest {
         var actualBalanceFirstCard = dashboardPage.getCardBalance(firstCardInfo);
         var actualBalanceSecondCard = dashboardPage.getCardBalance(secondCardInfo);
         Assertions.assertEquals(firstCardBalance, actualBalanceFirstCard);
-        Assertions.assertEquals(secondCardBalance, actualBalanceSecondCard);
+       Assertions.assertEquals(secondCardBalance, actualBalanceSecondCard);
     }
 }
 
